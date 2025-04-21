@@ -34,7 +34,8 @@ class InferenceLogitsProcessor(LogitsProcessor):
             "</s_date>": ["<s_address>"],
             "<s_address>": ["</s_address>"],
             "</s_address>": ["<s_total>"],
-            "<s_total>":["</s>"],
+            "<s_total>":["</s_total>"],
+            "</s_total>":["</s>"],
         }[last_tag]
 
     def __call__(self, input_ids: LongTensor, scores: FloatTensor) -> FloatTensor:

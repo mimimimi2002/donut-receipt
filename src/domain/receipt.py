@@ -31,6 +31,6 @@ class Receipt:
             "<s_address>",
             "</s_address>",
             "<s_total>",
-            "</s_total>"
+            "</s_total>",
             "</s>",
         ]
